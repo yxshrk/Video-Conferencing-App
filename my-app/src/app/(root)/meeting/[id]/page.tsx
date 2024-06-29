@@ -13,7 +13,7 @@ const Meeting = ({ params: {id} }: { params: { id: number } }) => {
 
   const [isSetupComplete, setIsSetupComplete] = useState(false);
 
-  const { call, isCallLoading } = useGetCallById(id);
+  const { call, isCallLoading } = useGetCallById(id.toLocaleString());
 
   if (!isLoaded || isCallLoading) {
     return <Loader />
