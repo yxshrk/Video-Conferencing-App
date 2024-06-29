@@ -10,16 +10,12 @@ const Navbar = () => {
     bg-dark-1 px-6 py-4 lg:px-10'>
         <Link href="/" className='flex items-center gap-1'>
         <Image 
-            src="/icons/logo.svg"
-            width={32}
-            height={32}
+            src="/icons/YRK Conferencing (5).png"
+            width={150}
+            height={150}
             alt="Yrk Conferencing Logo"
             className='max-sm:size-10'
         />
-        <p className='text-[26px] font-extrabold
-        text-white max-sm:hidden'>
-            Yrk Conferencing
-        </p>
         </Link>
         
         <div className='flex-between gap-5'>

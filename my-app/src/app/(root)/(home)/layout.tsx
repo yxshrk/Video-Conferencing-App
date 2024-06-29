@@ -1,6 +1,15 @@
-import Navbar from '@/components/ui/Navbar'
-import Sidebar from '@/components/ui/Sidebar'
+import Navbar from '@/components/Navbar'
+import Sidebar from '@/components/Sidebar'
+import { Metadata } from 'next';
 import React, { ReactNode } from 'react'
+
+export const metadata: Metadata = {
+  title: "YRK Conferencing App",
+  description: "Video Conferencing App",
+  icons: {
+    icon: '/icons/YRK Conferencing (5).png'
+  }
+};
 
 const HomeLayout = ({ children }: { children: ReactNode }) => {
   return (
@@ -20,7 +29,6 @@ const HomeLayout = ({ children }: { children: ReactNode }) => {
             </section>
 
         </div>
-        {children}
     </main>
   )
 }
