@@ -34,11 +34,11 @@ const MobileNav = () => {
             <SheetContent side="left" className='border-none bg-dark-1'>
                 <Link href="/" className='flex items-center gap-1'>
                     <Image 
-                        src="/icons/logo.svg"
-                        width={32}
-                        height={32}
+                        src="/icons/YRK Conferencing (5).png"
+                        width={40}
+                        height={40}
                         alt="Yrk Conferencing Logo"
-                        className='max-sm:size-10'
+                        className='max-sm:size-30'
                     />
                     <p className='text-[26px] font-extrabold
                     text-white'>

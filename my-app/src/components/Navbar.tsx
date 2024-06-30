@@ -14,7 +14,7 @@ const Navbar = () => {
             width={150}
             height={150}
             alt="Yrk Conferencing Logo"
-            className='max-sm:size-10'
+            className='max-sm:size-30'
         />
         </Link>
         
