@@ -7,16 +7,18 @@ import { Call } from '@stream-io/video-react-sdk';
 
 const Home = () => {
   const now = new Date();
+
+  const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   
   const time = now.toLocaleTimeString('en-US', {
     hour: '2-digit',
     minute: '2-digit',
-    timeZone: 'Asia/Singapore'
+    timeZone: userTimeZone
   });
   
   const date = (new Intl.DateTimeFormat('en-US', {
     dateStyle: 'full',
-    timeZone: 'Asia/Singapore'
+    timeZone: userTimeZone
   })).format(now);
 
   const { endedCalls, upcomingCalls, callRecordings, isLoading } =
